@@ -8,7 +8,7 @@
                 <input type="text" placeholder="请输入课程名称">
                 <el-row class="mb-4">
                     <el-button type="info">
-                        <img src="../../../public/course/seek-1.png" alt="">
+                        <img src="../../public/course/seek-1.png" alt="">
                         <p>搜索</p>
                     </el-button>
                 </el-row>

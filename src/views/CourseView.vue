@@ -320,9 +320,9 @@
                     @current-change="handleSizeChange"
             />
         </div>
+        <!--路由-->
+        <RouterView></RouterView>
     </div>
-  <!--路由-->
-    <RouterView></RouterView>
 </template>
 
 <script
@@ -843,6 +843,5 @@ let Comete = () => {
   bottom: 50px;
   left: 0;
 }
-
 
 </style>

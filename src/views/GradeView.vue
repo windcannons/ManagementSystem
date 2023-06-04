@@ -12,7 +12,7 @@
                 <button class="logn"
                         @click="logn">
                     <img
-                        src="../../public/Grade/logn%20.png"
+                        src="../../public/Grade/logn.png"
                         alt="">
                     <span>搜索</span>
                 </button>
