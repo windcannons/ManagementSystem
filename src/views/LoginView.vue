@@ -23,7 +23,7 @@
                             src="../../public/Login/pass.png"
                             alt="">
                     </div>
-                    <input type="text"
+                    <input type="password"
                            name=""
                            id=""
                            v-model="userLogin.pass"
@@ -41,7 +41,9 @@
                            v-model="userLogin.code"
                     >
                     <div class="PassCode">
-
+                        <img
+                            :src="codeing"
+                            alt="">
                     </div>
                 </div>
                 <!--    登录按钮-->
@@ -79,19 +81,22 @@ import {
     login
 } from "@/axios/api"
 import {
-    reactive
+    reactive,
+    ref
 } from "vue";
 import router
     from "@/router";
 // 获取验证码
+let codeing = ref("/api/captcha")
 captcha().then(res=>{
-    console.log(res)
+    // codeing.value = res.data
+    // console.log(codeing.value)
 })
 
 let userLogin = reactive({
-    name: "admin",
-    pass: "123",
-    code: "aa"
+    name: "",
+    pass: "",
+    code: ""
 })
 
 // 重置
@@ -198,6 +203,10 @@ function loginBtn() {
                     height: 61px;
                     margin-right: 20px;
                     background-color: cornflowerblue;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
 

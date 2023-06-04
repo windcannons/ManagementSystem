@@ -187,11 +187,11 @@ onMounted(() => {
         },
         color: ['#a6c5f6', '#4e8cee', '#00d2dd', '#80cc45', '#fd5151', '#4f8def', '#f56c6c'],
         legend: { //图例组件，颜色和名字
-            x: '70%',
+            x: '80%',
             y: 'center',
             orient: 'vertical',
-            itemGap: 12, //图例每项之间的间隔
-            itemWidth: 10,
+            itemGap: 30, //图例每项之间的间隔
+            itemWidth: 20,
             itemHeight: 10,
             icon: 'rect',
             data: ["语文", "数学", "历史", "地理", "化学"],
@@ -199,7 +199,7 @@ onMounted(() => {
                 color: [],
                 fontStyle: 'normal',
                 fontFamily: '微软雅黑',
-                fontSize: 12,
+                fontSize: 22,
             }
         },
         series: [{
@@ -208,7 +208,7 @@ onMounted(() => {
             clockwise: false, //饼图的扇区是否是顺时针排布
             minAngle: 20, //最小的扇区角度（0 ~ 360）
             center: ['35%', '50%'], //饼图的中心（圆心）坐标
-            radius: [40, 60], //饼图的半径
+            radius: [40, 120], //饼图的半径
             //  avoidLabelOverlap: true, ////是否启用防止标签重叠
             itemStyle: { //图形样式
                 normal: {
@@ -256,7 +256,7 @@ onMounted(() => {
             silent: true,
             minAngle: 20, //最小的扇区角度（0 ~ 360）
             center: ['35%', '50%'], //饼图的中心（圆心）坐标
-            radius: [0, 80], //饼图的半径
+            radius: [0, 150], //饼图的半径
             itemStyle: { //图形样式
                 normal: {
                     borderColor: '#fff',
